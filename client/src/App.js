@@ -6,7 +6,6 @@ import ShowOfferts from './pages/ShowOfferts.js'
 import Register from './pages/Register.js'
 import AddOffert from './pages/AddOffert.js'
 import Dashboard from './pages/Dashboard.js'
-import MyBooks from './pages/MyBooks.js'
 import EditOffert from './pages/EditOffert.js'
 
 const App =()=>{
@@ -20,10 +19,7 @@ const App =()=>{
         <Route path="/offerts/page/:id" exact element={<ShowOfferts />}></Route>
         <Route path="/editOffert/:id" exact element={<EditOffert />}></Route>
         <Route path="/dashboard/" exact element={<Dashboard />}></Route>
-
-
         <Route path="/offert/:id" exact element={<ShowOne />}></Route>
-        <Route path="/myBooks/:id" exact element={<MyBooks />}></Route>
 
         </Routes>
         </BrowserRouter>
