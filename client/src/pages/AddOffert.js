@@ -18,7 +18,7 @@ const [date]=useState(new Date())
 
   async function newOffer(event){
     event.preventDefault()
-    const response = await fetch(/*'http://localhost:3030/api/addoffert'*/"http://serv5.onrender.com/api/addoffert",{
+    const response = await fetch(/*'http://localhost:3030/api/addoffert'*/"https://serv5.onrender.com/api/addoffert",{
       method: 'POST', 
       headers:{
         'Content-Type':'application/json'

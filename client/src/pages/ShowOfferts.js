@@ -15,7 +15,7 @@ function App(){
   }, [])
 
         const fetchData = async () => {
-    const response = await fetch(/*"http://localhost:3030/api/offerts/"*/"http://serv5.onrender.com/api/offerts"+params.id)
+    const response = await fetch(/*"http://localhost:3030/api/offerts/"*/"https://serv5.onrender.com/api/offerts"+params.id)
     const dataBook = await response.json()
         setData(dataBook)
 
