@@ -7,7 +7,7 @@ const Offert = require('./models/offert.model.js')
 const Scores = require('./models/scores.model.js')
 const jwt = require('jsonwebtoken')
 
-const PORT = 3030 || process.env.PORT;
+const PORT = process.env.PORT || 3030;
 
 app.use(cors())
 app.use(express.json())
