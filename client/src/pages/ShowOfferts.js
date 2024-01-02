@@ -15,7 +15,7 @@ function App(){
   }, [])
 
         const fetchData = async () => {
-    const response = await fetch(/*"http://localhost:3030/api/offerts/"*/"https://serv5.onrender.com/api/offerts"+params.id)
+    const response = await fetch(/*"http://localhost:3030/api/offerts/"*/"https://serv5.onrender.com/api/offerts/"+params.id)
     const dataBook = await response.json()
         setData(dataBook)
 
@@ -41,12 +41,12 @@ return(
 {display(data.length)}
 
 <div style={{width:"15vw", margin:"auto", paddingBottom:"20px"}}>
-{id>2 ?  <a href={'http://localhost:3000/offerts/page/'+(id-2)}>{id-2}</a>: <a> {''}</a>}
+{id>2 ?  <a href={/*'http://localhost:3000/offerts/page/'*/'https://krzysiekkurwainzynierem.netlify.app/page/'+(id-2)}>{id-2}</a>: <a> {''}</a>}
 
-{id>1 ?  <a href={'http://localhost:3000/offerts/page/'+(id-1)}>{' '+ (id-1)+' '}</a>: <a>1</a>}
+{id>1 ?  <a href={/*'http://localhost:3000/offerts/page/'*/'https://krzysiekkurwainzynierem.netlify.app/offerts/page' +(id-1)}>{' '+ (id-1)+' '}</a>: <a>1</a>}
 {id>=4 ? <label>{'•••'}</label>:''}
-<a href={'http://localhost:3000/offerts/page/'+(parseInt(id) +1)}>{(' '+ (parseInt(id)+1)+' ')}</a>
-<a href={'http://localhost:3000/offerts/page/'+(parseInt(id)+2)}>{( parseInt(id)+2+' ')}</a>
+<a href={/*'http://localhost:3000/offerts/page/'*/'https://krzysiekkurwainzynierem.netlify.app/offerts/page'+(parseInt(id) +1)}>{(' '+ (parseInt(id)+1)+' ')}</a>
+<a href={/*'http://localhost:3000/offerts/page/'*/ 'https://krzysiekkurwainzynierem.netlify.app/offerts/page'  +(parseInt(id)+2)}>{( parseInt(id)+2+' ')}</a>
 </div>
 
 </div>

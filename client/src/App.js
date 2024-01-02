@@ -13,13 +13,13 @@ const App =()=>{
         <BrowserRouter>
         <Routes>
         <Route path="/" exact element={<Login />}></Route>
-        <Route path="/login" exact element={<Login />}></Route>
-        <Route path="/register" exact element={<Register />}></Route>
-        <Route path="/addoffert" exact element={<AddOffert />}></Route>
-        <Route path="/offerts/page/:id" exact element={<ShowOfferts />}></Route>
-        <Route path="/editOffert/:id" exact element={<EditOffert />}></Route>
-        <Route path="/dashboard/" exact element={<Dashboard />}></Route>
-        <Route path="/offert/:id" exact element={<ShowOne />}></Route>
+        <Route path="https://krzysiekkurwainzynierem.netlify.app/login" exact element={<Login />}></Route>
+        <Route path="https://krzysiekkurwainzynierem.netlify.app/register" exact element={<Register />}></Route>
+        <Route path="https://krzysiekkurwainzynierem.netlify.app/addoffert" exact element={<AddOffert />}></Route>
+        <Route path="https://krzysiekkurwainzynierem.netlify.app/offerts/page/:id" exact element={<ShowOfferts />}></Route>
+        <Route path="https://krzysiekkurwainzynierem.netlify.app/editOffert/:id" exact element={<EditOffert />}></Route>
+        <Route path="https://krzysiekkurwainzynierem.netlify.app/dashboard/" exact element={<Dashboard />}></Route>
+        <Route path="https://krzysiekkurwainzynierem.netlify.app/offert/:id" exact element={<ShowOne />}></Route>
 
         </Routes>
         </BrowserRouter>
