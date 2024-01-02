@@ -40,7 +40,7 @@ const Login =()=> {
   localStorage.setItem("_id", data.user);
 
 }if (!authenticated) {
- return  navigate("/dashboard");
+ return  navigate("/offerts/page/1");
 }
   
   if (data.status==="error"){
