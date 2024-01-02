@@ -12,14 +12,14 @@ const App =()=>{
     return <div>
         <BrowserRouter>
         <Routes>
-        <Route path="./" exact element={<Login />}></Route>
-        <Route path="./login" exact element={<Login />}></Route>
-        <Route path="./register" exact element={<Register />}></Route>
-        <Route path="./addoffert" exact element={<AddOffert />}></Route>
-        <Route path="./offerts/page/:id" exact element={<ShowOfferts />}></Route>
-        <Route path="./editOffert/:id" exact element={<EditOffert />}></Route>
-        <Route path="./dashboard/" exact element={<Dashboard />}></Route>
-        <Route path="./offert/:id" exact element={<ShowOne />}></Route>
+        <Route path="/" exact element={<Login />}></Route>
+        <Route path="/login" exact element={<Login />}></Route>
+        <Route path="/register" exact element={<Register />}></Route>
+        <Route path="/addoffert" exact element={<AddOffert />}></Route>
+        <Route path="/offerts/page/:id" exact element={<ShowOfferts />}></Route>
+        <Route path="/editOffert/:id" exact element={<EditOffert />}></Route>
+        <Route path="/dashboard/" exact element={<Dashboard />}></Route>
+        <Route path="/offert/:id" exact element={<ShowOne />}></Route>
 
         </Routes>
         </BrowserRouter>
