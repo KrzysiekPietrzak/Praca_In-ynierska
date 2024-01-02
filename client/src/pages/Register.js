@@ -15,7 +15,7 @@ function App() {
   async function registerUser(event){
     event.preventDefault()
 
-    const response = await fetch('http://localhost:3030/api/register',{
+    const response = await fetch(/*'http://localhost:3030/api/register'*/"http://serv5.onrender.com/api/",{
       method: 'POST',
       headers:{
         'Content-Type':'application/json'

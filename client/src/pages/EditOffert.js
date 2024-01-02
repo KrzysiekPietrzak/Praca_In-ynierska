@@ -29,7 +29,7 @@ const [date]=useState(new Date())
   }, [])
 
        const fetchData = async () => {
-    const response = await fetch("http://localhost:3030/api/offert/"+params.id)
+    const response = await fetch(/*"http://localhost:3030/api/offert/"*/"http://serv5.onrender.com/api/offert"+params.id)
    // console.log(response.clone.json())
     const dataBook = await response.json()
         setOldOffert(dataBook)

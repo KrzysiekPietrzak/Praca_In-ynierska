@@ -17,7 +17,7 @@ function OffertBio(props){
     
 */}
     const fetchData = async () => {
-        const response = await fetch("http://localhost:3030/api/offert/"+params.id)
+        const response = await fetch(/*"http://localhost:30310/api/offert/"+params.id )|| */"http://serv5.onrender.com/api/offert/"+params.id)
         const dataBook = await response.json()
         setLiked(dataBook.liked)
             }
